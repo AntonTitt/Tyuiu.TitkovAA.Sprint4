@@ -11,7 +11,8 @@ namespace Tyuiu.TitkovAA.Sprint4.Task2.Test
         {
             DataService dt = new DataService();
             int[] a = new int[] { 2, 2, 2, 5, 5, 3, 4, 2, 5, 2, 5, 3, 4, 3, 5, 2 };
-            int res = dt.Calculate(a);
+            int res = dt.Calculate(a);//
+
             Assert.AreEqual(res, 20);
         }
     }

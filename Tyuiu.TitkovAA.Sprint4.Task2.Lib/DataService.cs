@@ -17,8 +17,9 @@ namespace Tyuiu.TitkovAA.Sprint4.Task2.Lib
                 if (array[i] % 2 == 0)
                 {
                     t += array[i];
-                }
+                }//
             }
+
             return t;
         }
     }
