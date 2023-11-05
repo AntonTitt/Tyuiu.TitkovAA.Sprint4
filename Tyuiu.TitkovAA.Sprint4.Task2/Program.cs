@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.TitkovAA.Sprint4.Task1.Lib;
+using Tyuiu.TitkovAA.Sprint4.Task2.Lib;
 
-namespace Tyuiu.TitkovAA.Sprint4.Task1
+namespace Tyuiu.TitkovAA.Sprint4.Task2
 {
     class Program
     {
@@ -20,7 +20,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task1
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: решение задания                                                   *");
-            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #13                                                             *");
             Console.WriteLine("* Выполнил: Титков А. А. | РПСб-23-1                                      *");
             Console.WriteLine("***************************************************************************");
@@ -39,7 +39,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task1
                 a[i] = (Convert.ToInt32(Console.ReadLine()));
             }
             Console.WriteLine("Массив: ");
-            
+
             for (int i = 0; i < a.Length; i++)
             {
                 Console.Write(a[i]);
@@ -50,7 +50,6 @@ namespace Tyuiu.TitkovAA.Sprint4.Task1
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(dt.Calculate(a));
 
         }
     }
