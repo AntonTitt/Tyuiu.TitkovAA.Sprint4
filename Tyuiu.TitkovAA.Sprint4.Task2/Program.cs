@@ -25,18 +25,18 @@ namespace Tyuiu.TitkovAA.Sprint4.Task2
             Console.WriteLine("* Выполнил: Титков А. А. | РПСб-23-1                                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан одномерный целочисленный массив на 16 элементов заполненный         *");
-            Console.WriteLine("* значениями с клавиатуры в диапазоне от 2 до 5 подсчитать произведение   *");
-            Console.WriteLine("* нечетных элементов массива.                                             *");
+            Console.WriteLine("* Дан одномерный целочисленный массив на 13 элементов заполненный         *");
+            Console.WriteLine("* случайными в диапазоне от 2 до 7 подсчитать сумму четных элементов      *");
+            Console.WriteLine("* массива.                                                                *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* С клавиатуры: 2, 2, 2, 5, 5, 3, 4, 2, 5, 2, 5, 3, 4, 3, 5, 2            *");
             DataService dt = new DataService();
-            int[] a = new int[16];
+            Random rnd = new Random();
+            int[] a = new int[13];
             for (int i = 0; i < a.Length; i++)
             {
-                a[i] = (Convert.ToInt32(Console.ReadLine()));
+                a[i] = rnd.Next(2, 7);
             }
             Console.WriteLine("Массив: ");
 
@@ -50,6 +50,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task2
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+            Console.WriteLine(dt.Calculate(a));
 
         }
     }

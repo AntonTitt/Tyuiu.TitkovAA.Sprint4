@@ -39,7 +39,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task1
                 a[i] = (Convert.ToInt32(Console.ReadLine()));
             }
             Console.WriteLine("Массив: ");
-            
+
             for (int i = 0; i < a.Length; i++)
             {
                 Console.Write(a[i]);
