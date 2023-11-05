@@ -32,7 +32,9 @@ namespace Tyuiu.TitkovAA.Sprint4.Task2
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             DataService dt = new DataService();
-            Random rnd = new Random();//
+
+            Random rnd = new Random();
+
             int[] a = new int[13];
             for (int i = 0; i < a.Length; i++)
             {
