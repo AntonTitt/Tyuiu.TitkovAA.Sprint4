@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.TitkovAA.Sprint4.Task4.Lib;
-
-namespace Tyuiu.TitkovAA.Sprint4.Task4
+using Tyuiu.TitkovAA.Sprint4.Task5.Lib;
+namespace Tyuiu.TitkovAA.Sprint4.Task5
 {
     class Program
     {
@@ -26,7 +25,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task4
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
-            Console.WriteLine("* статическими значениями в диапазоне от 4 до 8. Заменить четные элементы *");
+            Console.WriteLine("* статическими значениями в диапазоне от -4 до 7. Заменить четные элементы*");
             Console.WriteLine("* массива на 1.                                                           *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
@@ -38,44 +37,16 @@ namespace Tyuiu.TitkovAA.Sprint4.Task4
             Console.WriteLine("*         4, 7, 7, 8, 8,                                                  *");
             DataService dt = new DataService();
 
-            int[,] a = new int[5,5];
-            for (int i = 0; i < a.GetLength(1); i++)
-            {
-                for (int j = 0; j < a.GetLength(1); j++)
-                {
-                    Console.Write("Значение ");
-                    Console.Write(i);
-                    Console.Write(" ");
-                    Console.Write(j);
-                    Console.Write(": ");
-                    a[i,j]=Convert.ToInt32(Console.ReadLine());
-                }
-            }
-            Console.WriteLine("Массив: ");
-            for (int i = 0; i < a.GetLength(0); i++)
-            {
-                for (int j = 0; j < a.GetLength(1); j++)
-                {
-                    Console.Write(a[i, j]);
-                    Console.Write(" ");
-                }
-                Console.WriteLine();
-            }
+            int[,] a = { {4, 5, 5, 6, 4 },
+                        { 7, 8, 4, 7, 5 },
+                        { 5, 6, 5, 8, 5 },
+                        { 7, 5, 8, 7, 8 },
+                        { 4, 7, 7, 8, 8 } };
+
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            a = dt.Calculate(a);
-            for (int i = 0; i < a.GetLength(0); i++)
-            {
-                for(int j = 0; j < a.GetLength(1); j++)
-                {
-                    Console.Write(a[i, j]);
-                    Console.Write(" ");
-                }
-                Console.WriteLine();
-            }
-
 
         }
     }
