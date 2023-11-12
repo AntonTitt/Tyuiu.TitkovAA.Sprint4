@@ -20,7 +20,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task4
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: решение задания                                                   *");
-            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Задание #4                                                              *");
             Console.WriteLine("* Вариант #20                                                             *");
             Console.WriteLine("* Выполнил: Титков А. А. | РПСб-23-1                                      *");
             Console.WriteLine("***************************************************************************");
