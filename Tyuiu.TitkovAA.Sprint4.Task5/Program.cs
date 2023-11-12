@@ -25,28 +25,40 @@ namespace Tyuiu.TitkovAA.Sprint4.Task5
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
-            Console.WriteLine("* статическими значениями в диапазоне от -4 до 7. Заменить четные элементы*");
-            Console.WriteLine("* массива на 1.                                                           *");
+            Console.WriteLine("* статическими значениями в диапазоне от -4 до 7. Найти сумму             *");
+            Console.WriteLine("* положительных элементов.                                                *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* массив: 4, 5, 5, 6, 4,                                                  *");
-            Console.WriteLine("*         7, 8, 4, 7, 5,                                                  *");
-            Console.WriteLine("*         5, 6, 5, 8, 5,                                                  *");
-            Console.WriteLine("*         7, 5, 8, 7, 8,                                                  *");
-            Console.WriteLine("*         4, 7, 7, 8, 8,                                                  *");
+
             DataService dt = new DataService();
+            Random rnd = new Random();
 
-            int[,] a = { {4, 5, 5, 6, 4 },
-                        { 7, 8, 4, 7, 5 },
-                        { 5, 6, 5, 8, 5 },
-                        { 7, 5, 8, 7, 8 },
-                        { 4, 7, 7, 8, 8 } };
+            int[,] a = new int[5, 5];
+            for (int i = 0; i < a.GetLength(1); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
 
+                    a[i, j] = rnd.Next(-4, 7);
+
+                }
+            }
+            Console.WriteLine("Массив: ");
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    Console.Write(a[i, j]);
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+            Console.WriteLine(dt.Calculate(a));
 
         }
     }

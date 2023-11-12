@@ -26,16 +26,12 @@ namespace Tyuiu.TitkovAA.Sprint4.Task4
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
-            Console.WriteLine("* статическими значениями в диапазоне от 4 до 8. Заменить четные элементы *");
-            Console.WriteLine("* массива на 1.                                                           *");
+            Console.WriteLine("* значениями вводимыми с клавиатуры в диапазоне от 4 до 8. Заменить четные*");
+            Console.WriteLine("* элементы массива на 1.                                                  *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* массив: 4, 5, 5, 6, 4,                                                  *");
-            Console.WriteLine("*         7, 8, 4, 7, 5,                                                  *");
-            Console.WriteLine("*         5, 6, 5, 8, 5,                                                  *");
-            Console.WriteLine("*         7, 5, 8, 7, 8,                                                  *");
-            Console.WriteLine("*         4, 7, 7, 8, 8,                                                  *");
+
             DataService dt = new DataService();
 
             int[,] a = new int[5,5];
