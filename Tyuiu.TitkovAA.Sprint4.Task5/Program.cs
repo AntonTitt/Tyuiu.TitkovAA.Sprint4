@@ -57,6 +57,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task5
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+
             Console.WriteLine(dt.Calculate(a));
 
         }

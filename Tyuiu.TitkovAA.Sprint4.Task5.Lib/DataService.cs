@@ -21,9 +21,7 @@ namespace Tyuiu.TitkovAA.Sprint4.Task5.Lib
                     }
                 }
             }
-
             return t;
-
         }
     }
 }
